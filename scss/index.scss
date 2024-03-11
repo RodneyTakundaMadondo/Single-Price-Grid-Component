@@ -1,0 +1,144 @@
+$color-primary-1: hsl(179, 62%, 43%);
+$color-primary-2: hsl(71, 73%, 54%);
+$color-primary-3: hsl(204, 43%, 93%);
+$color-primary-4: hsl(218, 22%, 67%);
+$color-primary-5: #47b5b4;
+$ff-primary: "Karla", sans-serif;
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: $ff-primary;
+}
+.container {
+  width: 45%;
+  max-width: 1600px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 20vh auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.initial {
+  padding: 1rem 0 1rem 2rem;
+}
+.initial-heading {
+  color: $color-primary-1;
+  font-weight: 700;
+}
+.guarantee-heading {
+  color: $color-primary-2;
+  font-weight: 700;
+}
+.description {
+  color: $color-primary-4;
+  line-height: 2;
+}
+.description span {
+  display: block;
+}
+.pricing-plan {
+  display: flex;
+  justify-content: space-between;
+  background-color: $color-primary-1;
+}
+.plan-details {
+  width: 50%;
+  background-color: $color-primary-1;
+  color: $color-primary-3;
+  padding: 2rem 0 2rem 2.5rem;
+}
+.month-price{
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+.plan-description {
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+}
+.plan-features {
+  width: 50%;
+  background-color: $color-primary-5;
+  padding: 2rem 0 2rem 2.5rem;
+}
+.plan-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.pricing-plan .plan-features {
+  color: $color-primary-3;
+}
+
+.plan-list {
+  list-style-type: none;
+  padding-left: 0px;
+  opacity: 0.9;
+  font-weight: 400;
+}
+.plan-list li {
+  margin-bottom: 0.5rem;
+}
+
+.plan-price {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.plan-month {
+  opacity: 0.5;
+}
+
+.signup-button {
+  background-color: $color-primary-2;
+  color: white;
+  border: none;
+  width: 80%;
+  padding: 15px 25px;
+  font-size: 1rem;
+  border-radius: 5px;
+  font-weight: 700;
+  font-family: $ff-primary;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.19);
+  margin-top: 2.5rem;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+@media (max-width: 1130px) {
+  .description span {
+    display: inline;
+  }
+}
+
+@media (max-width: 880px) {
+  .initial {
+    padding: 1rem 2rem 1rem 2rem;
+  }
+  .initial-heading {
+    font-size: 1.5rem;
+  }
+  .pricing-plan {
+    flex-direction: column;
+  }
+  .plan-details,
+  .plan-features,
+  .signup-button {
+    width: 100%;
+  }
+  .plan-features, .plan-details{
+    padding: 2rem 2.5rem 2rem 2.5rem;
+  }
+  .container {
+    min-width: 330px;
+    margin: 0 auto;
+  }
+  .description {
+    color: $color-primary-4;
+    line-height: 1;
+  }
+}

@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Karla", sans-serif;
+}
+
+.container {
+  width: 45%;
+  max-width: 1600px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 20vh auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.initial {
+  padding: 1rem 0 1rem 2rem;
+}
+
+.initial-heading {
+  color: hsl(179, 62%, 43%);
+  font-weight: 700;
+}
+
+.guarantee-heading {
+  color: hsl(71, 73%, 54%);
+  font-weight: 700;
+}
+
+.description {
+  color: hsl(218, 22%, 67%);
+  line-height: 2;
+}
+
+.description span {
+  display: block;
+}
+
+.pricing-plan {
+  display: flex;
+  justify-content: space-between;
+  background-color: hsl(179, 62%, 43%);
+}
+
+.plan-details {
+  width: 50%;
+  background-color: hsl(179, 62%, 43%);
+  color: hsl(204, 43%, 93%);
+  padding: 2rem 0 2rem 2.5rem;
+}
+
+.month-price {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.plan-description {
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+}
+
+.plan-features {
+  width: 50%;
+  background-color: #47b5b4;
+  padding: 2rem 0 2rem 2.5rem;
+}
+
+.plan-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.pricing-plan .plan-features {
+  color: hsl(204, 43%, 93%);
+}
+
+.plan-list {
+  list-style-type: none;
+  padding-left: 0px;
+  opacity: 0.9;
+  font-weight: 400;
+}
+
+.plan-list li {
+  margin-bottom: 0.5rem;
+}
+
+.plan-price {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.plan-month {
+  opacity: 0.5;
+}
+
+.signup-button {
+  background-color: hsl(71, 73%, 54%);
+  color: white;
+  border: none;
+  width: 80%;
+  padding: 15px 25px;
+  font-size: 1rem;
+  border-radius: 5px;
+  font-weight: 700;
+  font-family: "Karla", sans-serif;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.19);
+  margin-top: 2.5rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 1130px) {
+  .description span {
+    display: inline;
+  }
+}
+@media (max-width: 880px) {
+  .initial {
+    padding: 1rem 2rem 1rem 2rem;
+  }
+  .initial-heading {
+    font-size: 1.5rem;
+  }
+  .pricing-plan {
+    flex-direction: column;
+  }
+  .plan-details,
+  .plan-features,
+  .signup-button {
+    width: 100%;
+  }
+  .plan-features, .plan-details {
+    padding: 2rem 2.5rem 2rem 2.5rem;
+  }
+  .container {
+    min-width: 330px;
+    margin: 0 auto;
+  }
+  .description {
+    color: hsl(218, 22%, 67%);
+    line-height: 1;
+  }
+}/*# sourceMappingURL=index.css.map */
